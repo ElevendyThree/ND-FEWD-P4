@@ -9,7 +9,7 @@ Change Google analytics section to load async and moved to end of page script
 Moved performance matters js inline to eliminate render blocking during page load
 Moved "style" css inline to eliminate render blocking during page load
 Moved "print" css to only load if page is being printed
-Images changed to "*_tmb" and optimized for 100px50px display size
+Images changed to "*_tmb" and optimized for display size
 Images added to img folder instead of downloaded from host site
 Commented out Google fonts, were never used on this page
 
@@ -19,6 +19,12 @@ Moved performance matters js inline to eliminate render blocking during page loa
 Moved "style" css inline to eliminate render blocking during page load
 Moved "print" css to only load if page is being printed
 Images added to img folder instead of downloaded from host site
+
+pizza.html
+Moved "style" css inline to eliminate render blocking during page load
+Moved main.js outside body to speed page display
+Images changed to "_min" and optimized for display size
+
 
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
