@@ -5,7 +5,9 @@ Note: any reduced images have been saves as the original file name + "_min" to i
 Specific changes made to optimize website:
 
 index.html
-Change Google analytics to load async
+Change Google analytics section to load async and moved to end of page script
+Images changed to "*_tmb" and optimized for 100px50px display size
+Images added to img folder instead of downloaded from host site
 
 
 
