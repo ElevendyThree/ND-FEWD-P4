@@ -6,8 +6,11 @@ Specific changes made to optimize website:
 
 index.html
 Change Google analytics section to load async and moved to end of page script
+Moved "print" css to only load if page is being printed
 Images changed to "*_tmb" and optimized for 100px50px display size
 Images added to img folder instead of downloaded from host site
+Moved "style" css inline to eliminate render blocking during page load
+
 
 
 
