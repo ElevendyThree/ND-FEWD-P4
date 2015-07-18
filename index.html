@@ -65,8 +65,6 @@
     <!-- changed "print" css to only load when page is being printed -->
     <link href="css/print.css" rel="stylesheet" media="print">
 
-    <script async src="js/perfmatters.js"></script>
-
   </head>
   <body>
     <header>
@@ -125,6 +123,20 @@
         // TODO: replace with your Google Analytics profile ID.
         ga('create', 'UA-XXXX-Y');
         ga('send', 'pageview');
+      </script>
+
+      <!-- Moved performance matters js inline to eliminate page blocking JS -->
+      <script>
+        function logCRP() {
+          var t = window.performance.timing,
+            dcl = t.domContentLoadedEventStart - t.domLoading,
+            complete = t.domComplete - t.domLoading;
+          var stats = document.getElementById("crp-stats");
+          stats.textContent = 'DCL: ' + dcl + 'ms, onload: ' + complete + 'ms';
+        }
+        window.addEventListener("load", function(event) {
+          logCRP();
+        });
       </script>
 
   </body>
