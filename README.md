@@ -13,7 +13,7 @@ Images changed to "*_tmb" and optimized for 100px50px display size
 Images added to img folder instead of downloaded from host site
 Commented out Google fonts, were never used on this page
 
-project-2048.html
+project-2048.html, project-mobile.html, project_webperf.html
 Change Google analytics section to load async and moved to end of page script
 Moved performance matters js inline to eliminate render blocking during page load
 Moved "style" css inline to eliminate render blocking during page load
